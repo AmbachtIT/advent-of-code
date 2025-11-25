@@ -38,6 +38,31 @@ namespace AdventOfCode.Test
 			}
 		}
 
+		[Test(), MethodDataSource(nameof(AllProblems))]
+		public async Task SolveProblem(ProblemReference reference)
+		{
+			using var inputReader = new StreamReader(reference.OpenStream("ProblemInput.txt"));
+			var writer = new StringWriter();
+
+			var problem = reference.Instantiate();
+			try
+			{
+				problem.Solve(inputReader, writer);
+				await writer.FlushAsync();
+				Console.WriteLine(writer.ToString());
+			}
+			catch
+			{
+				await writer.FlushAsync();
+				Console.WriteLine();
+				Console.WriteLine("**********************");
+				Console.WriteLine("Output before exception");
+				Console.WriteLine("**********************");
+				Console.WriteLine(writer.ToString());
+				throw;
+			}
+		}
+
 		private void CompareReaders(TextReader actual, TextReader expected)
 		{
 			var actualLines = actual.ReadLines().ToList();
