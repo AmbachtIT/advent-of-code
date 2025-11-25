@@ -3,5 +3,7 @@
   <Folder Name="/.github/workflows/">
     <File Path=".github/workflows/main.yml" />
   </Folder>
+  <Project Path="AdventOfCode.Test/AdventOfCode.Test.csproj" Id="082b0c3c-fc1b-44de-aece-3cb6cf7fb7c0" />
   <Project Path="AdventOfCode.Web/AdventOfCode.Web.csproj" Id="3044d010-7b71-4d06-b33d-84d2a8676356" />
+  <Project Path="AdventOfCode/AdventOfCode.csproj" Id="b56a5942-f89b-44d5-8e2e-1a24a4efe828" />
 </Solution>
