@@ -21,10 +21,10 @@ namespace AdventOfCode.Test
 				problem.Solve(inputReader, writer);
 				await writer.FlushAsync();
 
-				var mySolution = new StringReader(writer.ToString().Trim());
-				CompareReaders(mySolution, outputReader);
+				var mySolution = writer.ToString().Trim();
+				CompareReaders(new StringReader(mySolution), outputReader);
 
-				Console.WriteLine("Pass!");
+				Console.WriteLine(mySolution);
 			}
 			catch
 			{

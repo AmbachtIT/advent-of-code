@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace AdventOfCode.AoC24.Day1
+namespace AdventOfCode.AoC24.Day1A
 {
 	public class Solution : ProblemBase
 	{

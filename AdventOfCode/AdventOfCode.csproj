@@ -7,14 +7,17 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <None Remove="AoC24\Day1\SampleInput.txt" />
-    <None Remove="AoC24\Day1\SampleOutput.txt" />
+    <None Remove="AoC24\Day1A\SampleInput.txt" />
+    <None Remove="AoC24\Day1A\SampleOutput.txt" />
   </ItemGroup>
 
   <ItemGroup>
-    <EmbeddedResource Include="AoC24\Day1\ProblemInput.txt" />
-    <EmbeddedResource Include="AoC24\Day1\SampleInput.txt" />
-    <EmbeddedResource Include="AoC24\Day1\SampleOutput.txt" />
+    <EmbeddedResource Include="AoC24\Day1B\ProblemInput.txt" />
+    <EmbeddedResource Include="AoC24\Day1B\SampleInput.txt" />
+    <EmbeddedResource Include="AoC24\Day1B\SampleOutput.txt" />
+    <EmbeddedResource Include="AoC24\Day1A\ProblemInput.txt" />
+    <EmbeddedResource Include="AoC24\Day1A\SampleInput.txt" />
+    <EmbeddedResource Include="AoC24\Day1A\SampleOutput.txt" />
   </ItemGroup>
 
 </Project>
